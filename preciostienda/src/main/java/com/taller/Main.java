@@ -43,6 +43,7 @@ public class Main {
         buscarPrecio(driver,"Laptops","Dell i7 8gb");
 
         //Navegar entre cada una de las categorías - Monitors 
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement menuMonitors = driver.findElement(By.linkText("Monitors"));
         menuMonitors.click();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -52,11 +53,13 @@ public class Main {
 
         //Cerrar el navegador
         driver.close();
+        driver.quit();
     }
 
     public static  WebElement buscarPrecio(WebDriver driver, String tipodispositivo, String nombredispositivo) {
         
         //Realizar un punto de control por cada uno de los productos involucrados
+        
         WebElement dispositivo = driver.findElement(By.linkText(nombredispositivo));
         dispositivo.click();
         WebElement dispositivopre = driver.findElement(By.className("price-container"));
