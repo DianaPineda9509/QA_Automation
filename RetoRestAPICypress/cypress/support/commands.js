@@ -8,7 +8,10 @@ Cypress.Commands.add('validateSchema', (responseBody, schema) => {
 
 Cypress.Commands.add('requestSend', (method, url, body, expectedStatusCode, schema) => {
     cy.request({ method: method, url: url, body: body}).then((response) =>{
-        cy.validateSchema(response.body, schema)
-        expect(response.status).to.equal(expectedStatusCode)
+        cy.validateSchema(response.body, schema);
+        expect(response.status).to.equal(expectedStatusCode);
+        cy.wrap(response.body.length).then((length) => {
+            cy.log('Elementos del JSON es : ' + response.body.length + '.');
+        });
       })
 });
