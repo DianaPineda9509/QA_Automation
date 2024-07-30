@@ -1,0 +1,32 @@
+Conclusiones.
+
+HALLAZGOS
+
+CASOS DE PRUEBA APROBADOS
+- Realizar login: se realiza fe forma exitosa.
+- Agregar productos al carrito de compra: se realiza selección de los primeros dos productos.
+- Visualizar carrito: se visualiza carrito de compras con los productos seleccionado anteriormente con la clase que verifica dicho proceso.
+- Completar formulario: se llena el formulario exitosamente.
+- Finalizar compra: se fianliza compra con exito llegando a validar la frase que asi lo confirma.
+
+CASOS DE RUEBA FALLIDOS
+- si elimino los productos estando en el formulario de checking me permite continuar al formulario de llenar los datos cuando en realidad no comprara nada.
+- permite ingresar numeros y caracteres especiales a el nombre y apellido en el formulario checking.
+- si lleno campos erroneos en nombre como numero el los marca como alerta en rojo, pero aún asi permite continuar para finalizar la compra.
+- no hay seguridad ya que mediante copiar y pegar un link puedo saltarme los pasos del flujo normal de la pagina.
+
+Conclusiones
+
+Cuando los fujos son muy repetitivos como en este caso la compra de productos una excelente opción es automatizar
+dichos procesos asi se reduce tiempo y costos.
+Cuando se realiza cambios frecuentes en otros procesos pero se requiere hacer una prueba e2e para verificar que los
+procesos repetitivos no se vean afectados una buena idea es una prueba automatizada e2e, asi se evita el riesgo humano.
+Es ideal estar en constante monitoreo y avisar al personal idoneo cuando falle la automatización ya que 
+quiere decir que algun selector o proceso ha sido modificado o eliminado.
+
+REPORTE DE RESULTADOS
+.....EjercicioPracticoE2E\seleniume2e\target\site\surefire-report.html
+
+
+
+

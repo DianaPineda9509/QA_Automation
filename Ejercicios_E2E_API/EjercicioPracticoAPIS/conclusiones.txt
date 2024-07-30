@@ -1,0 +1,30 @@
+Conclusiones.
+
+HALLAZGOS
+
+CASOS DE PRUEBA APROBADOS
+1. Crear un usuario: aprobado status 200.
+2. Buscar usuario creado: aprobado status 200.
+3. Actualizar nombre y correo: aprobado status 200.
+4. Buscar usuario actualizado: aprobado status 200.
+5. Eliminar usuario: aprobado status 200.
+
+
+CASOS DE RUEBA FALLIDOS
+- al enviar parametros no esperados en las url de los endpoint falla la prueba, generando status 404.
+
+Conclusiones
+El api esta muy bien documentada en swagger más sin embargo hace falta que al responder cada petición esta me devuelva 
+más datos, como en la creación deberia volver el id del usuario ya que modificar por nombre es peligroso por que varias 
+personas pueden compartir el mismo nombre asi mismo al eliminar.
+Realizar pruebas automatizadas del backend o de los servicios nos ayuda a garantizar la integridad de nuestas aplicaciones,
+es por ello que es importante realizarlas asi mismo saber la capacidad de rendimiento que soporte
+bajo cargas de estres o concurrencia de usuarios para que en front preparado ante cualquier novedad. 
+
+
+REPORTE DE RESULTADOS
+.....EjercicioPracticoAPIS\Reporte_resultados_30072024.pdf
+
+
+
+

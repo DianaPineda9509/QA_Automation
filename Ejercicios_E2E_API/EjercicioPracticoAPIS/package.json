@@ -1,0 +1,14 @@
+{
+  "name": "ejerciciopracticoapis",
+  "version": "1.0.0",
+  "description": "Ejercicio practico apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diana Pineda",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  }
+}
